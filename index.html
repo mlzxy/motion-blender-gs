@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- TODO: Replace the content tag with appropriate information -->
+   
   <!-- <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
@@ -12,7 +13,13 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
-  <title>TODO</title>
+  <title>Motion Blender Gaussian Splatting</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+
+
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <!-- <link rel="icon" type="image/png" sizes="96x96" href="static/images/favicon-96x96.png"> -->
 
@@ -42,30 +49,30 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">TODO</h1>
+            <h1 class="title is-1 publication-title">Motion Blender Gaussian Splatting for Dynamic Reconstruction</h1>
 
 
-            <div class="is-size-5 publication-authors">
+            <!-- <div class="is-size-5 publication-authors">
               <span class="author-block"><a target="_blank"> Anonymous </a></span>
              
-            </div>
+            </div> -->
 
             <!-- TODO: Paper authors -->
-            <!-- <div class="is-size-5 publication-authors">
+            <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://mlzxy.github.io/" target="_blank">Xinyu Zhang</a>,
               </span>
               <span class="author-block">
-                Yuhan Liu
+                Haonan Chang
               </span>,
                <span class="author-block">
-                Yuting Wang
+                Yuhan Liu
               </span>,
               <span class="author-block">
               <a href="http://www.abdeslam.net/" target="_blank">Abdeslam Boularias</a>
               </span>
             </div>
-             <div> </div> -->
+             <div> </div>
            
             <!--<div class="is-size-5 publication-authors">
               <span class="author-block">Rutgers University<br>CoRL 2024</span>
@@ -74,17 +81,17 @@
             </div> -->
 
             <div class="column has-text-centered">
-             <!-- 
+             
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2309.12969" target="_blank"
+                  <a href="https://arxiv.org/pdf/TODO" target="_blank"
                   class="external-link button is-normal is-rounded  arxiv"> 
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                   </a>
-                </span> -->
+                </span>
 
             
 
@@ -125,11 +132,11 @@
 
 
 <!-- Teaser video-->
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/detect_wo_finetune_slide_new_demo_mute.mp4"
+        <source src="static/videos/page-1-movie.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -137,38 +144,124 @@
       </h2>
     </div>
   </div>
-</section> -->
+</section>
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<!-- <section class="section hero is-light">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Few-shot object detection aims at learning novel categories given only a few example images. It is a basic skill for a robot that performs tasks in open environments. Recent methods focus on finetuning strategies, with complicated procedures that prohibit a wider application. In this paper, we introduce DE-ViT, a few-shot object detector without the need for finetuning. DE-ViT ’s novel architecture is based on a new region-propagation mechanism for localization. The propagated region masks are transformed into bounding boxes through a learnable spatial integral layer. Instead of training prototype classifiers, we propose to use prototypes to project ViT features into a subspace that is robust to overfitting on base classes. We evaluate DE-ViT on few-shot, and one-shot object detection benchmarks with Pascal VOC, COCO, and LVIS. DE-ViT establishes new state-of-the-art results on all benchmarks. Notably, for COCO, DE-ViT surpasses the few-shot SoTA by 15 mAP on 10-shot and 7.2 mAP on 30-shot and one-shot SoTA by 2.8 AP50. For LVIS, DE-ViT outperforms few-shot SoTA by 17 box APr. Further, we evaluate DE-ViT with a real robot by building a pick-and-place system for sorting novel objects based on example images. The source code and the models of DE-ViT are included in the supplementary material.
+            Gaussian splatting has emerged as a powerful tool for high-fidelity reconstruction of dynamic scenes.  However, existing methods primarily rely on implicit motion representations, such as encoding motions into neural networks or per-Gaussian parameters, which makes it difficult to further manipulate the reconstructed motions.
+This lack of explicit controllability limits existing methods to replaying recorded motions only, which hinders a wider application.
+To address this, we propose Motion Blender Gaussian Splatting (MB-GS), a novel framework that uses motion graph as an explicit and sparse motion representation. The motion of graph links is propagated to individual Gaussians via dual quaternion skinning, with learnable weight painting functions determining the influence of each link. The motion graphs and 3D Gaussians are jointly optimized from input videos via differentiable rendering.
+Experiments show that MB-GS achieves state-of-the-art performance on the iPhone dataset while being competitive on HyperNeRF. Additionally, we demonstrate the application potential of our method in generating novel object motions and robot demonstrations through motion editing.
           </p>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 <!-- End paper abstract -->
 
-<!-- <section class="hero is-small">
+<section class="hero is-small">
   <div class="hero-body" >
     <div class="container">
+      <h2 class="title is-3 has-text-centered">Method Overview</h2>
         <div class="item" style="text-align: center;">
-          <img src="static/images/ycb.png" width="80%" alt="MY ALT TEXT"/>
-        <!-- <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2> -->
+          <img src="static/images/method.jpg" width="80%" alt="MY ALT TEXT"/>
         </div>
     </div>
   </div>
-</section>  -->
+  </section> 
+
+
+
+<section class="hero is-small">
+  <div class="hero-body" >
+    <div class="container">
+        <div class="item" style="text-align: center;">
+         <h1 class="title is-3">
+          Novel Pose Animation
+        </h1> 
+        <video poster="" id="tree" autoplay controls muted loop height="80%">
+        <source src="static/videos/animation.mp4"
+        type="video/mp4">
+      </video>
+        </div>
+    </div>
+  </div>
+</section> 
+
+
+
+
+
+<section class="hero is-small">
+  <div class="hero-body" >
+    <div class="container">
+        <div class="item" style="text-align: center;">
+         <h1 class="title has-text-centered">
+          Robot Demonstrations Synthesis
+        </h1> 
+        <video poster="" id="tree" autoplay controls muted loop height="80%">
+        <source src="static/videos/robot_crop.mp4"
+        type="video/mp4">
+      </video>
+        </div>
+    </div>
+  </div>
+</section> 
+
+
+
+<section class="hero is-small">
+  <div class="hero-body" >
+    <div class="container">
+        <div class="item" style="text-align: center;">
+         <h1 class="title has-text-centered">
+          Learned Motion Graphs and Weight Paintings.
+        </h1> 
+        <div class="item" style="text-align: center;">
+          <img src="static/images/motion-graph-demo.jpg" width="70%" alt="MY ALT TEXT"/>
+        </div>
+       
+        </div>
+    </div>
+  </div>
+</section> 
+
+
+
+
+<section class="hero is-small">
+  <div class="hero-body" >
+    <div class="container">
+        <div class="item" style="text-align: center;">
+         <h1 class="title has-text-centered">
+          Qualitative Comparison
+        </h1> 
+        <h2 class="subtitle" style="margin-top:10px">iPhone Dataset</h2>
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/iphone.mp4"
+          type="video/mp4">
+        </video>
+
+        <h2 class="subtitle" style="margin-top:10px">HyperNerf Dataset</h2>
+        <video poster="" id="tree" autoplay controls muted loop height="100%" width="80%">
+          <source src="static/videos/hypernerf.mp4"
+          type="video/mp4">
+        </video>
+        </div>
+        <div class="has-text-centered">
+          MB-GS achieves state-of-the-art performance on the iPhone dataset while being competitive on HyperNeRF. 
+        </div>
+    </div>
+  </div>
+</section> 
 
 
 
@@ -178,9 +271,9 @@
       <h2 class="title is-3">Method Overview</h2>
         <div class="item" style="text-align: center;">
           <img src="static/images/method.png" width="80%" alt="MY ALT TEXT"/>
-        <!-- <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle has-text-centered">
           First image description.
-        </h2> -->
+        </h2> 
         </div>
     </div>
   </div>
@@ -276,21 +369,21 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <img src="static/images/coco.jpg" alt="MY ALT TEXT"/>
-        <!-- <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle has-text-centered">
           First image description.
-        </h2> -->
+        </h2>
       </div>
       <div class="item">
         <img src="static/images/pascalvoc.jpg" alt="MY ALT TEXT"/>
-        <!-- <h2 class="subtitle has-text-centered">
+         <h2 class="subtitle has-text-centered">
           Second image description.
-        </h2> -->
+        </h2> 
       </div>
       <div class="item">
         <img src="static/images/lvis.jpg" alt="MY ALT TEXT"/>
-        <!-- <h2 class="subtitle has-text-centered">
+        <h2 class="subtitle has-text-centered">
          Third image description.
-       </h2> -->
+       </h2>
      </div>
     </div>
   </div>
