@@ -1,6 +1,6 @@
 # Motion Blender Gaussian Splatting
 
-[![arXiv](https://img.shields.io/badge/arXiv-2503.09040-b31b1b.svg)](https://arxiv.org/abs/2503.09040) [![Website](https://img.shields.io/badge/Website_&_Demos-blue.svg)](https://mlzxy.github.io/mbgs)
+[![arXiv](https://img.shields.io/badge/arXiv-2503.09040-b31b1b.svg)](https://arxiv.org/abs/2503.09040) [![Website](https://img.shields.io/badge/Website_&_Demos-blue.svg)](https://mlzxy.github.io/motion-blender-gs)
 
 
 ![](assets/imgs/overview.png)
