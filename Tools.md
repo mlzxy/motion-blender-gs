@@ -1,4 +1,4 @@
-Please do check my [video](https://youtu.be/hsLUvXhTAuo) on explaining the tools (starting from [00:00](00:00)). 
+Please do check my [video](https://youtu.be/hsLUvXhTAuo) on explaining the tools. 
 
 The following script assumes the datasets and weights are setted up. 
 
