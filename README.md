@@ -1,6 +1,6 @@
 # Motion Blender Gaussian Splatting
 
-[![arXiv](https://img.shields.io/badge/arXiv-2503.09040-b31b1b.svg)](https://arxiv.org/abs/2503.09040) [![Website](https://img.shields.io/badge/Website_&_Demos-blue.svg)](https://mlzxy.github.io/motion-blender-gs)
+[![arXiv](https://img.shields.io/badge/arXiv-2503.09040-b31b1b.svg)](https://arxiv.org/abs/2503.09040)  [![Website](https://img.shields.io/badge/Website_&_Demos-blue.svg)](https://mlzxy.github.io/motion-blender-gs)  [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/motion-blender-gaussian-splatting-for-dynamic/dynamic-reconstruction-on-iphone-dataset)](https://paperswithcode.com/sota/dynamic-reconstruction-on-iphone-dataset) 
 
 
 ![](assets/imgs/overview.png)
